@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse Entry</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<p id="status">Enter the Metaverse</p>
-	<button id="enterBtn">Enter</button>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <p id="status">Enter the Metaverse</p>
+    <button id="enterBtn">Enter</button>
 
+    <script>
+        document.getElementById("enterBtn").addEventListener("click", () => {
+            const pTag = document.getElementById("status");
+            const h1Tag = document.createElement("h1");
+            h1Tag.id = pTag.id; // keep the same id
+            h1Tag.innerText = "Entered Metaverse";
+            pTag.parentNode.replaceChild(h1Tag, pTag);
+        });
+    </script>
 </body>
-
 </html>
