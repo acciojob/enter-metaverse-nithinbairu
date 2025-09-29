@@ -4,7 +4,7 @@ document.getElementById("enterBtn").addEventListener("click", () => {
 
   // Create <h1> element
   const h1Tag = document.createElement("h1");
-  h1Tag.id = pTag.id;           // keep the same id
+  h1Tag.id = "statusHeading";           // keep the same id
   h1Tag.innerText = "Entered Metaverse";
 
   // Replace <p> with <h1>
