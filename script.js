@@ -1,9 +1,12 @@
-window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("enterBtn").addEventListener("click", () => {
-    let pTag = document.getElementById("status");
-    let h1Tag = document.createElement("h1");
-    h1Tag.id = pTag.id;
-    h1Tag.innerText = "Entered Metaverse";
-    pTag.parentNode.replaceChild(h1Tag, pTag);
-  });
+document.getElementById("enterBtn").addEventListener("click", () => {
+  // Select the <p> element
+  const pTag = document.getElementById("status");
+
+  // Create <h1> element
+  const h1Tag = document.createElement("h1");
+  h1Tag.id = pTag.id;           // keep the same id
+  h1Tag.innerText = "Entered Metaverse";
+
+  // Replace <p> with <h1>
+  pTag.parentNode.replaceChild(h1Tag, pTag);
 });
